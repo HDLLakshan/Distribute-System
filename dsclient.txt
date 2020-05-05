@@ -1,0 +1,13 @@
+Java and Java swing used to develop rmi server and desktop client.
+
+When rmi server started, server call REST API every 15sec and call get methods in REST API such as getData, Send Email and Send Message.
+
+When call getData method of REST API, server saves data in a variable.
+
+After run the Desktop client, desktop client call the server via remote object and then the server return the variables which is saved dar after call the rmi server.
+
+Only admin can login the desktop client and admin can add floor and add room to exiting floor and admin can change the state(Switch on/off) of sensor when given the floor number and room number.    
+
+After desktop client call these method by server through remote object, rmi server call these method from REST API and passed the data to rmi server.
+
+desktop client refresh every 30 second and if some sensor data changed, It border colored blue. and if sensor deactivate no any data are shown. 
